@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/indexMusic.css">
+    <link rel="stylesheet" href="../css/variablesMusic.css">
+    <script src="../js/indexMusic.js" defer></script>
+</head>
+<body>
+
+    <main class="container-sign-in">
+        <section class="container-title">
+            <h1>Indie Music</h1>
+        </section>
+        <form class="form_signup">
+            <fieldset class="section_form_signup">
+                <div class="container_labels_form">
+                    <label for="input_name" class="labels_form_signup">Name</label>
+                    <label for="input_email" class="labels_form_signup">Email</label>
+                    <label for="input_gender" class="labels_form_signup">Gender</label>
+                    <label for="input_password" class="labels_form_signup">Password</label>
+                </div>
+                <div class="container_inputs_form">
+                    <input type="text" name="input_name" id="input_name" class="inputs_form_signup">
+                    <input type="email" name="input_email" id="input_email" class="inputs_form_signup">
+                    <select name="" id="input_gender" class="inputs_form_signup">
+                        <option selected disabled>Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <input type="password" id="input_password" class="inputs_form_signup">
+                </div>
+            </fieldset>
+            <div class="container_buttons_form">
+                <a id="button-login" class="button_form_submit_signup" title="Log in" onclick="signIn()">Log in</a>
+                <input id="button-delete" type="reset" value="Delete information" class="button_form_reset_signup" title="Delete information">
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

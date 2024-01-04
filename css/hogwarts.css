@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/wallpaper.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#header {
+    width: 50%;
+    text-align: center;
+    font-size: 2rem;
+    backdrop-filter: blur(20px);
+    border-radius: 1rem;
+    color: aliceblue;
+    color: black;
+    position: relative;
+}
+.header-title{
+    text-shadow: 0px 1px 1px black;
+    animation-name: animationTitle;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/* ANIMATION TITLE */
+@keyframes animationTitle {
+    0%{
+        text-shadow: -10px 0px 5px black;
+    }
+    100%{
+        text-shadow: 10px 0px 5px black;
+    }
+}
+/* ------------------------------------------------- CONTENT ------------------------------------------------- */
+/* ---------------------------------- SECTION 1 ---------------------------------- */
+.display-none{
+    display: none!important;
+}
+#section-1{
+    width: 50%;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 4rem;
+    backdrop-filter: blur(20px);
+}
+.title-section-1{
+    font-size: 3rem;
+    font-weight: bold;
+    position:relative;
+    bottom:4rem;
+    color: aliceblue;
+}
+.input-section-1{
+    outline: none;
+    border: none;
+    width: 60%;
+    border-radius: 1rem;
+    color: aliceblue;
+    background-color: black;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 5px rgb(83, 0, 83);
+}
+.input-section-1:hover{
+    box-shadow: 0px 0px 50px 20px rgb(100, 0, 100);
+}
+.button-section-1{
+    position: relative;
+    top: 4rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    color: rgb(229, 243, 255);
+    background-color: black;
+    box-shadow: 0px 0px 10px 5px rgb(83, 0, 83);
+    letter-spacing: 1px;
+}
+.button-section-1:hover{
+    box-shadow: 0px 0px 20px 20px rgb(100, 0, 100);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+/* ---------------------------------- SECTION 2 ---------------------------------- */
+#section-2{
+    width: 50%;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    position: absolute;
+    top: 4rem;
+    backdrop-filter: blur(20px);
+    color: aliceblue;
+}
+.container-name{
+    display: flex;
+    width: 50%;
+    justify-content:center;
+    display: relative;
+    position: relative;
+    top: 2rem;
+}
+.name{
+    position: relative;
+    left: 1rem;
+}
+.div-class-name{
+    width: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px black;
+    animation-name: animationName;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+/* ANIMATION NAME */
+@keyframes animationName {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.paragraph-section-2{
+    color: black;
+    color: aliceblue;
+    font-weight: bold;
+    position: relative;
+    top: 2.5rem;
+    text-shadow: 0px 0px 2px black;
+    animation-name: animationParagraph;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+/* ANIMATION PARAGRAPH */
+@keyframes animationParagraph {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* FORM SECTION 2 */
+.container-form-section-2{
+    width: 60%;
+    height: 30%;
+    position: absolute;
+    top: 8rem;
+    display: flex;
+}
+.form-labels{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+}
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+}
+.form-labels label{
+    text-shadow: 0px 0px 2px black;
+    font-size: 1.1rem;
+    padding: 0.2rem;
+    position: relative;
+    margin: 1rem;
+}
+.input-section-2{
+    outline: none;
+    border: none;
+    width: 80%;
+    border-radius: 0;
+    color: aliceblue;
+    background-color: black;
+    padding: 0.4rem;
+    box-shadow: 0px 0px 10px 5px rgb(83, 0, 83);
+    margin: 1rem;
+}
+.input-section-2:hover{
+    box-shadow: 0px 0px 15px 8px rgb(100, 0, 100);
+}
+.button-section-2{
+    position: relative;
+    top: 28rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    color: rgb(229, 243, 255);
+    background-color: black;
+    box-shadow: 0px 0px 10px 5px rgb(83, 0, 83);
+    letter-spacing: 1px;
+}
+.button-section-2:hover{
+    box-shadow: 0px 0px 20px 20px rgb(100, 0, 100);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+/* ---------------------------------- SECTION 3 ---------------------------------- */
+#section-3{
+    width: 50%;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    position: absolute;
+    top: 4rem;
+    backdrop-filter: blur(20px);
+    color: aliceblue;
+}
+.container-house-section-3{
+    display: flex;
+    width: 80%;
+    height: 15%;
+    justify-content:center;
+    align-items: center;
+    display: relative;
+    position: relative;
+    top: 2rem;
+
+}
+.house{
+    position: relative;
+    left: 1rem;
+}
+.div-class-house{
+    width: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px black;
+    animation-name: animationName;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}

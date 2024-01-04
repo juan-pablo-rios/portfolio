@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="../css/kfc.css">
+    <script src="../js/kfc.js" defer></script>
+</head>
+<body class="theme-light" id="theme">
+    <main>
+        <section class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <select name="" id="language" class="form-select" onchange="changeLanguage()">
+                            <option value="" id="optionLanguage_1">Seleccionar Idioma</option>
+                            <option value="es" id="optionLanguage_2">Español</option>
+                            <option value="en" id="optionLanguage_3">Ingles</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <select name="" id="general-theme" class="form-select" onchange="changeTheme()">
+                            <option value="" id="optionTheme_1">Seleccionar Tema</option>
+                            <option value="cl" id="optionTheme_2">Claro</option>
+                            <option value="os" id="optionTheme_3">Obscuro</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="card p-2 cards">
+                        <img src="../images/hamburguesa-1.webp" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <span class="price" id="price_1">$ 8.900</span>
+                            <h2 class="name-product" id="nameProduct_1">BBQ Crunch</h2>
+                            <p class="description-product" id="description_1">1 Sándwich BBQ Crunch (1 Filete de pollo apanado).</p>
+                            <button class="button-buy" class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="card p-2 cards">
+                        <img src="../images/hamburguesa-2.webp" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <span class="price" id="price_2">$ 15.900</span>
+                            <h2 class="name-product" id="nameProduct_2">Kentucky Sandwich</h2>
+                            <p class="description-product" id="description_2">1 Kentucky hamburguesa / Sandwich (1 Filete de pechuga de pollo apanado, pepinillos y vegetales).</p>
+                            <button class="button-buy" class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="card p-2 cards">
+                        <img src="../images/hamburguesa-3.webp" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <span class="price" id="price_3">$ 20.900</span>
+                            <h2 class="name-product" id="nameProduct_3">Combo BBQ Crunch</h2>
+                            <p class="description-product" id="description_3">1 Sándwich BBQ Crunch (1 Filete de pollo apanado) + 1 Papa Pequeña + 1 Gaseosa Petsi.</p>
+                            <button class="button-buy" class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="card p-2 cards">
+                        <img src="../images/hamburguesa-4.webp" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <span class="price" id="price_4">$ 16.900</span>
+                            <h2 class="name-product" id="nameProduct_4">Kentucky Coronel Sandwich</h2>
+                            <p class="description-product" id="description_4">1 Kentucky Coronel hamburguesa / Sandwich (1 Filete de pechuga de pollo apanado y Ensalada).</p>
+                            <button class="button-buy" class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="card p-2 cards">
+                        <img src="../images/hamburguesa-5.webp" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <span class="price" id="price_5">$ 21.900</span>
+                            <h2 class="name-product" id="nameProduct_5">Combo Kentucky Sandwich</h2>
+                            <p class="description-product" id="description_5">1 Kentucky hamburguesa / Sandwich (1 Filete de pechuga de pollo apanado, Pepinillos y Papas).</p>
+                            <button class="button-buy" class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="card p-2 cards">
+                        <img src="../images/hamburguesa-6.webp" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <span class="price" id="price_6">$ 22.900</span>
+                            <h2 class="name-product" id="nameProduct_6">Combo Kentucky Coronel Sandwich</h2>
+                            <p class="description-product" id="description_6">1 Kentucky Coronel hamburguesa / Sandwich (1 Filete de pechuga de pollo apanado, Ensalada y Papas).</p>
+                            <button class="button-buy" class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="card p-2 cards">
+                        <img src="../images/hamburguesa-7.webp" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <span class="price" id="price_7">$ 23.900</span>
+                            <h2 class="name-product" id="nameProduct_7">Sandwich Crispy BBQ</h2>
+                            <p class="description-product" id="description_7">1 Sandwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, cebolla cristalizada y Queso).</p>
+                            <button class="button-buy" class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-5">
+                    <div class="card p-2 cards">
+                        <img src="../images/hamburguesa-8.webp" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <span class="price" id="price_8">$ 29.900</span>
+                            <h2 class="name-product" id="nameProduct_8">Combo Sandwich Crispy BBQ</h2>
+                            <p class="description-product" id="description_8">1 Sandwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, Cebolla, Papas + 1 Gaseosa Petsi).</p>
+                            <button class="button-buy" class="buyButton">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, similique?
+                </div>
+                <div class="col-md-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, similique?
+                </div>
+                <div class="col-md-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, similique?
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

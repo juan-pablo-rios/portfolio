@@ -1,0 +1,82 @@
+.theme-light{
+   background-color: #dddddd;
+}
+/* LIGHT */
+.theme-light .price{
+   font-size: 20px;
+   font-weight: bolder;
+}
+.theme-light .name-product{
+   font-size: 20px;
+   font-weight: bold;
+}
+.theme-light .description-product{
+   font-size: 15px;
+   font-weight: lighter;
+}
+.theme-light .button-buy{
+   background-color: #E5002B;
+   color: white;
+   padding: 7px;
+   border:none;
+   width: 100%;
+   border: 1px solid #E5002B ;
+   font-weight: bolder;
+}
+.theme-light .button-buy:hover{
+   background-color: white;
+   border:1px solid #E5002B;
+   color: #E5002B;
+
+}
+.theme-light footer{
+   margin-top: 20px;
+   background-color: #E5002B;
+   color: white;
+   padding: 35px;
+}
+
+ /* DARK */
+.theme-dark{
+background-color: rgb(5, 4, 4);
+}
+.theme-dark .price{
+   font-size: 20px;
+   font-weight: bolder;
+}
+.theme-dark .name-product{
+   font-size: 20px;
+   font-weight: bold;
+}
+.theme-dark .description-product{
+   font-size: 15px;
+   font-weight: lighter;
+}
+
+.theme-dark .button-buy{
+   background-color: #000000;
+   color: rgb(231, 231, 231);
+   padding: 7px;
+   border:none;
+   width: 100%;
+   border: 1px solid #4a4a4a ;
+   font-weight: bolder;
+}
+.theme-dark .button-buy:hover{
+   background-color: rgb(245, 245, 245);
+   border:1px solid #161616;
+   color: #101010;
+
+}
+.theme-dark footer{
+   margin-top: 20px;
+   background-color: #101010;
+   color: white;
+   padding: 35px;
+}
+
+.theme-dark .cards {
+   background-color: #292929;
+   box-shadow: 0px 0px 5px 2px white;
+   color: white;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts</title>
+    <link rel="stylesheet" href="../css/hogwarts.css">
+    <script defer src="../js/hogwarts.js"></script>
+</head>
+<body>
+
+    <main id="container">
+
+        <header id="header">
+            <h1 class="header-title">Harry Potter</h1>
+        </header>
+        <!-- SECTION 1 -->
+        <section id="section-1">
+                <label for="input-section-1" class="title-section-1">What is your name?</label>
+                <input type="text" id="1-input-section-1" class="input-section-1">
+                <button id="button-section-1" class="button-section-1" onclick="captureNameAndDisplaySection2()">¡Start!</button>
+        </section>
+        <!-- SECTION 2 -->
+        <section id="section-2" class="display-none">
+            <div class="container-name">
+                <div class="div-class-name">Welcome</div>
+                <div id="userName" class="div-class-name name"></div>
+            </div>
+            <p class="paragraph-section-2">Answer the following questions to continue with the adventure:</p>
+            <div class="container-form-section-2">
+                <div class="form-labels">
+                    <label for="input-1">How old are you?</label><br>
+                    <label for="input-2">Family:</label><br>
+                    <label for="input-3">Lineage:</label><br>
+                    <label for="input-4">Qualities: </label>
+                </div>
+                <div class="form-inputs">
+                    <input type="number" class="input-section-2" id="1-input-section-2"><br>
+                    <input type="text" class="input-section-2" id="2-input-section-2"><br>
+                    <select class="input-section-2" id="3-input-section-2">
+                        <option disabled selected>Select lineage</option>
+                        <option value="pureblood">Pure Blood</option>
+                        <option value="halfbreed">Half-breed</option>
+                        <option value="muggle">Muggle</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                    <select class="input-section-2"id="4-input-section-2">
+                        <option disabled selected>Select qualities</option>
+                        <option value="1">1. Valor, fuerza y audacia.</option>
+                        <option value="2">2. Justicia, lealtad y paciencia.</option>
+                        <option value="3">3. Creatividad, erudición e inteligencia.</option>
+                        <option value="4">4. Ambición, determinación y astucia.</option>
+                    </select>
+                </div>
+            </div>
+            <button id="button-section-2" class="button-section-2" onclick="captureInformationAndDisplaySection3()">Submit</button>
+        </section>
+        <!-- SECTION 3 -->
+        <section id="section-3" class="display-none">
+            <div class="container-house-section-3">
+                
+                <div id="userName-2" class="div-class-house house"></div>
+            </div>
+            <div class="">
+                <img src="http://2.bp.blogspot.com/-n7Synxyf0AA/UNhNvv9roRI/AAAAAAAAEAc/Ovs_7hPNokM/s1600/gollum_angry.jpg" alt="Gollum">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
